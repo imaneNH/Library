@@ -2,13 +2,14 @@ import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-button',
-  template: `<button [ngStyle]="style">{{label}}</button>`,
-  styles: [`button { padding: 10px 20px; border: none; cursor: pointer; }`]
+  templateUrl: './button.component.html' ,
+  styleUrls: ['./button.component.css'] 
 })
 export class ButtonComponent implements OnInit {
 
   @Input() label: string = 'Button';
-  @Input() style: { [klass: string]: any; } = {};
+  @Input() type: string = "button";
+  @Input() buttonStyle : 'primary' | 'secondary' | 'danger' = 'primary'; 
   constructor() { }
 
   ngOnInit(): void {
