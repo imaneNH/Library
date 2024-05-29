@@ -1,3 +1,28 @@
-<button [type]="type"  [ngClass]="buttonStyle" class="base-button">
-    {{ label }}
+  <!-- <button [type]="type"   class="base-button">
+      {{ label }}
+    </button> -->
+
+  <!-- <button [type]="type" id="btn" [class]="buttonStyle">
+    <span class="transition"></span>
+    <span class="gradient"></span>
+    <span class="label"> {{label}}</span>
+
+    <!-- login classes 
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+      </div>
+
+  </button> -->
+
+  <button [type]="type" class="base-button" [ngClass]="buttonStyle">
+    <span class="transition"></span>
+    <span class="gradient"></span>
+    <span class="label">{{ label }}</span>
+    <ng-container *ngIf="buttonStyle === 'login'">
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+      </div>
+    </ng-container>
   </button>
+  
+  

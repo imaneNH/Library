@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'lib-button',
@@ -8,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() label: string = 'Button';
-  @Input() type: string = "button";
-  @Input() buttonStyle : 'primary' | 'secondary' | 'danger' = 'primary'; 
+  @Input() type: 'button' | 'submit' | 'reset' | undefined;
+  @Input() buttonStyle : 'primary' | 'secondary' | 'danger' | 'login' |'Accueil' | undefined; 
+
+  @Input() style : string | undefined; 
   constructor() { }
 
   ngOnInit(): void {
+    
+
   }
 
 }
