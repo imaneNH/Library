@@ -144,9 +144,10 @@
   
   */
  /* Styles généraux pour tous les boutons */
+ @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
 .base-button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -161,10 +162,9 @@
 
 /*Style spécifique pour la page d'accueil */
 .Accueil{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+  font-family: 'Koho';
     font-size: 14px;
-    padding: 1em 2.7em;
+    padding: 1.09em 2.6em;
     font-weight: 500;
     background: #010351;
     color: white;
@@ -201,7 +201,7 @@
 .transition {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 500ms;
-  background-color: #4FD894;
+  background-color: rgba(79, 216, 148, 1);
   border-radius: 9999px;
   width: 0;
   height: 0;
@@ -219,11 +219,11 @@
   --hover-color: #010351;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
-  border-radius: 20px;
+  border-radius: 24px;
   background: var(--primary-color);
   gap: 0.6em;
   font-weight: bold;
-  padding: 1em 1.8em;
+  padding: 0.9em 1.8em;
 }
 
 .login .arrow-wrapper {
@@ -268,12 +268,39 @@
 }
 
 
-.primary {
+/* Styles spécifiques pour le button add*/
+.add {
+  /* border: 2px solid #010351; */
+ background-color: #010351;
+ border-radius: 0.9em;
+ padding: .8em 1.8em .8em 2em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+.add span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+ }
+
+ .add:hover {
+  background-color: #010331;
+ }
+ .primary {
   background-color: #007BFF;
 }
-
 .primary:hover {
   background-color: #0056B3;
+}
+
+.next {
+  background-color: seagreen;
+}
+
+.next:hover {
+  background-color: rgb(39, 112, 71);
 }
 
 .secondary {
