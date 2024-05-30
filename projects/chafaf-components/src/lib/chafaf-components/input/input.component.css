@@ -9,7 +9,7 @@
     font-size: inherit;
     background-color: #f4f2f2;
     border: none;
-    color: #646464;
+    /* color: #646464; */
     padding: 0.7rem 1rem;
     border-radius: 30px;
     width: 12em;
@@ -17,13 +17,15 @@
     margin-right: -2rem;
   }
   
-  .search__input:hover, .search__input:focus {
+  /* .search__input:hover {
     box-shadow: 0 0 1em #00000013;
-  }
+    
+  } */
   
   .search__input:focus {
     outline: none;
-    background-color: #f0eeee;
+    /* background-color: #f0eeee; */
+    border: 1px solid #010331;
   }
   
   .search__input::-webkit-input-placeholder {
@@ -32,18 +34,60 @@
   }
   
   .search__input:focus + .search__button {
-    background-color: #f0eeee;
+    background-color: #f4f2f2;
   }
   
   .search__button {
     border: none;
-    background-color: #f4f2f2;
+    /* background-color: #f4f2f2; */
     margin-top: .1em;
   }
-  
   
   .search__icon {
     height: 1.3em;
     width: 1.3em;
     fill: #b4b4b4;
+  } 
+
+  .inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0;
+    max-width: 190px;
+    position: relative;
   }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0.8em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    padding: 0 0.5em;
+  }
+  
+  .inputGroup > input:focus,
+  .inputGroup > input:valid {
+    border-color: #010331;
+  }
+  
+  .inputGroup input:focus + label,
+  .inputGroup input:valid + label {
+    transform: translateY(-180%) scale(0.9);
+    background-color: #fff;
+  }
+  

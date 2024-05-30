@@ -10,7 +10,8 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class InputComponent implements OnInit {
 
-  @Input() inputStyle : ''| undefined;
+  @Input() placeholder: string = 'Enter text';
+  @Input() inputStyle: 'search' | 'contact' | undefined;
   constructor() { }
 
   ngOnInit(): void {
