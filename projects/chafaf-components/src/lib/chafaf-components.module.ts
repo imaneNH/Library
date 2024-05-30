@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ChafafComponentsComponent } from './chafaf-components.component';
 import { ButtonComponent } from './chafaf-components/button/button.component';
 import { FormsModule } from '@angular/forms';
+import { InputComponent } from './chafaf-components/input/input.component';
 
 
 
@@ -10,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     ChafafComponentsComponent,
     ButtonComponent,
+    InputComponent,
   ],
   imports: [
     CommonModule, 
@@ -18,6 +20,7 @@ import { FormsModule } from '@angular/forms';
   exports: [
     ChafafComponentsComponent,
     ButtonComponent,
+    InputComponent
   ]
 })
 export class ChafafComponentsModule {
