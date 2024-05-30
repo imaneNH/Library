@@ -9,8 +9,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() label: string = 'Button';
   @Input() type: 'button' | 'submit' | 'reset' | undefined;
-  @Input() buttonStyle : 'next' |'primary' | 'secondary' | 'danger' | 'login' |'Accueil'| 'add'  | undefined; 
-
+  @Input() buttonStyle : 'next' |'primary' | 'secondary' | 'danger' | 'login' | 'Accueil'| 'add'  | 'pdf' | 'excel' | 'csv' | undefined; 
   @Input() style : string | undefined; 
   constructor() { }
 

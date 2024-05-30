@@ -1,150 +1,6 @@
-/*.base-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    color: white;
-  }
-  .primary {
-    background-color: #007BFF;
-  }
-  .primary:hover {
-    background-color: #0056B3;
-  }
-  .secondary {
-    background-color: #6C757D;
-  }
-  .secondary:hover {
-    background-color: #5A6268;
-  }
-  .danger {
-    background-color: #DC3545;
-  }
-  .danger:hover {
-    background-color: #C82333;
-  }
-  .base-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-  button {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
-    font-size: 14px;
-    padding: 1em 2.7em;
-    font-weight: 500;
-    background: #010351;
-    color: white;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2.5em;
-    cursor: pointer;
-  }
-  
-  .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 0.6em;
-    margin-top: -0.20em;
-  }
-  
-  .label {
-    position: relative;
-    top: -1px;
-  }
-  
-  .transition {
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 500ms;
-    background-color: #4FD894;
-    border-radius: 9999px;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-   button:hover .transition {
-    width: 100%;
-    height: 100%;
-  } 
-  
-   button:active {
-    transform: scale(0.97);
-  } 
-
-  .login {
-    --primary-color: #645bff;
-  --secondary-color: #fff;
-  --hover-color: #111;
-  --arrow-width: 10px;
-  --arrow-stroke: 2px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
-  color: var(--secondary-color);
-  padding: 1em 1.8em;
-  background: var(--primary-color);
-  display: flex;
-  transition: 0.2s background;
-  align-items: center;
-  gap: 0.6em;
-  font-weight: bold;
-  }
-  
-  .login .arrow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    background: var(--primary-color);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s;
-  }
-  
-  .login .arrow::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-  }
-  
-  .login:hover {
-    background-color: var(--hover-color);
-  }
-  
-  .login:hover .arrow {
-    background: var(--secondary-color);
-  }
-  
-  .login:hover .arrow:before {
-    right: 0;
-  }
-  
-  */
- /* Styles généraux pour tous les boutons */
- @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
 .base-button {
   padding: 10px 20px;
   font-size: 15px;
@@ -159,20 +15,25 @@
   align-items: center;
 }
 
+.Accueil {
+  font-family: 'KoHo', sans-serif;
+}
 
 /*Style spécifique pour la page d'accueil */
-.Accueil{
-  font-family: 'Koho';
-    font-size: 14px;
-    padding: 1.09em 2.6em;
-    font-weight: 500;
-    background: #010351;
-    color: white;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2.5em;
-    cursor: pointer;
+.Accueil,
+.pdf,
+.excel,
+.csv {
+  font-size: 14px;
+  padding: 1.09em 2.6em;
+  font-weight: 500;
+  background: #010351;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5em;
+  cursor: pointer;
 }
 
 .Accueil:hover .transition {
@@ -267,6 +128,64 @@
   right: 0;
 }
 
+.pdf:hover svg,
+.excel:hover svg ,
+.csv:hover svg  {
+  transform: scale(1.25);
+  transition: 0.3s linear;
+}
+
+.pdf:hover svg,
+.excel:hover svg,
+.csv:hover svg  {
+  transform: translateX(1.2em) scale(1.1);
+  fill: #fff;
+}
+
+.pdf:hover .label,
+.excel:hover .label,
+.csv:hover .label {
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.pdf:active,
+.excel:active,
+.csv:active {
+  transform: scale(0.95);
+}
+
+
+.pdf,
+.excel,
+.csv {
+  font-weight: bold;
+}
+.pdf .label,
+.excel .label,
+.csv .label {
+  margin-left: 4px;
+}
+/* plus icon */
+.icon {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 17px;
+}
+
+.excel .icon svg {
+  width: 13px;
+}
+
+.icon svg path {
+  fill: white;
+}
 
 /* Styles spécifiques pour le button add*/
 .add {
