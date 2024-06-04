@@ -11,6 +11,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class InputComponent implements OnInit {
 
   @Input() placeholder: string = 'Enter text';
+  @Input() label : string ='label';
   @Input() inputStyle: 'search' | 'contact' | undefined;
   constructor() { }
 
