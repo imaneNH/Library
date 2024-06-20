@@ -4,6 +4,7 @@ import { ChafafComponentsComponent } from './chafaf-components.component';
 import { ButtonComponent } from './chafaf-components/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './chafaf-components/input/input.component';
+import { ListComponent } from './chafaf-components/list/list.component';
 
 
 
@@ -12,6 +13,7 @@ import { InputComponent } from './chafaf-components/input/input.component';
     ChafafComponentsComponent,
     ButtonComponent,
     InputComponent,
+    ListComponent,
   ],
   imports: [
     CommonModule, 
@@ -21,6 +23,7 @@ import { InputComponent } from './chafaf-components/input/input.component';
     ChafafComponentsComponent,
     ButtonComponent,
     InputComponent,
+    ListComponent
   ]
 })
 export class ChafafComponentsModule {

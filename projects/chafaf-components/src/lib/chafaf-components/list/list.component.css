@@ -1,0 +1,116 @@
+
+header {
+    background-color: #eceef1;
+    padding: 1em 0;
+    color: #010351;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #010351;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4fd894;
+}
+
+/* Responsive Styles */
+header .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    header nav ul li {
+        margin: 0;
+    }
+
+    header nav ul li a {
+        padding: 1em;
+        display: block;
+        text-align: left;
+    }
+
+    header input[type="checkbox"]:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    header .menu-icon {
+        display: block;
+    }
+}
+
+.language-selection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Positionne les éléments à l'extrémité droite */
+}
+
+.language-selection button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.language-selection button img {
+    width: 30px; /* Ajustez la taille des images selon vos besoins */
+    height: auto;
+}
+  
+  
+  
+  
+  
