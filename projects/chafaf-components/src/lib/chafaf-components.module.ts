@@ -20,7 +20,7 @@ import { InputComponent } from './chafaf-components/input/input.component';
   exports: [
     ChafafComponentsComponent,
     ButtonComponent,
-    InputComponent
+    InputComponent,
   ]
 })
 export class ChafafComponentsModule {

@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+.flex-column {
+  font-family: "Poppins", sans-serif;
 }
   .inputForm {
     border: 1.5px solid #ecedec;
     border-radius: 10px;
     height: 50px;
-    width: 400px;
+    width: 380px;
     display: flex;
     align-items: center;
     padding-left: 10px;
     transition: 0.2s ease-in-out;
-    max-width: 380px;
-
 
     background-color: #f0f0f0;
     /* margin: 6px 0; */
@@ -26,11 +29,14 @@
   }
   
   .input {
+    font-family: "Poppins", sans-serif;
     background-color: #f0f0f0;
+    font-weight: 500;
+    font-size: 1rem;
     /* margin-left: 10px; */
     border-radius: 10px;
     border: none;
-    width: 85%;
+    width: 91%;
     height: 95%;
   }
   
@@ -45,6 +51,10 @@
   .inputForm svg {
     fill: #010351;
     margin-left: 10px;
+  }
+
+  .label {
+    margin-bottom: 10px;
   }
 
   /*------------------------------------------------------------------*/
