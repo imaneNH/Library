@@ -315,3 +315,26 @@
     left: 100%;
   }
 }
+
+.language-selection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+}
+
+.language-selection button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.language-selection button img {
+  width: 30px; 
+  height: auto;
+}
+.button-image{
+  width: 30px; 
+  height: auto;
+}
+

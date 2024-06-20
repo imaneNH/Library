@@ -48,4 +48,10 @@
         ></path>
       </svg>
     </ng-container>
+
+
+      <ng-container *ngIf= "imageUrl && lang ==='fr'" >
+        <img [src]="imageUrl"  class="button-image" (click)="handleClick()">
+      </ng-container>
+    
   </button>
