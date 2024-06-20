@@ -1,4 +1,55 @@
-.search {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+    max-width: 380px;
+
+
+    background-color: #f0f0f0;
+    /* margin: 6px 0; */
+    height: 45px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 13% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  
+  .input {
+    background-color: #f0f0f0;
+    /* margin-left: 10px; */
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 95%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #59dd9b;
+  } 
+
+  .inputForm svg {
+    fill: #010351;
+    margin-left: 10px;
+  }
+
+  /*------------------------------------------------------------------*/
+
+  .search {
     display: flex;
     align-items: center;
     text-align: center;
@@ -16,11 +67,6 @@
     transition: all ease-in-out .5s;
     margin-right: -2rem;
   }
-  
-  /* .search__input:hover {
-    box-shadow: 0 0 1em #00000013;
-    
-  } */
   
   .search__input:focus {
     outline: none;
@@ -49,6 +95,8 @@
     fill: #b4b4b4;
   } 
 
+  /*------------------------------------------------------------------*/
+
   .inputGroup {
     font-family: 'Segoe UI', sans-serif;
     margin: 1em 0;
@@ -56,7 +104,8 @@
     position: relative;
   }
   
-  .inputGroup input {
+  .inputGroup input,
+  .inputGroup textarea {
     font-size: 100%;
     padding: 0.8em;
     outline: none;
@@ -80,14 +129,52 @@
     padding: 0 0.5em;
   }
   
-  .inputGroup > input:focus,
-  .inputGroup > input:valid {
+  .inputGroup input:focus,
+  .inputGroup textarea:focus,
+  .inputGroup input:valid {
     border-color: #010331;
   }
   
   .inputGroup input:focus + label,
+  .inputGroup textarea:focus + label,
   .inputGroup input:valid + label {
-    transform: translateY(-180%) scale(0.9);
+    top: -0.6em; 
+    left: 0.8em;
+    transform: scale(0.9);
     background-color: #fff;
+    padding: 0 0.2em; 
+  }
+
+  /*-----------------------------------------------*/
+  
+  input[type="password"], input[type="text"] {
+    padding-right: 30px;
   }
   
+  .eye-icon {
+    position: absolute;
+    top: 54%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .file-input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 55px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+
+  input.file-input {
+    width: 400px;
+    border-radius: 55px;
+    background-color: #f0f0f0;
+  }
