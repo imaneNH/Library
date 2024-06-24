@@ -7,6 +7,12 @@ import { MenuItem } from 'chafaf-components';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  columns = ['Name', 'Age', 'Email'];
+  data = [
+    { Name: 'John Doe', Age: 28, Email: 'john.doe@example.com' },
+    { Name: 'Jane Smith', Age: 34, Email: 'jane.smith@example.com' },
+    { Name: 'Sam Johnson', Age: 45, Email: 'sam.johnson@example.com' }
+  ];
   title = 'myApp';
 
   logoUrl = 'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp';
