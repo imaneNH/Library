@@ -31,4 +31,5 @@ export class AppComponent {
   onLanguageChange(lang: string) {
     console.log(`Language changed to: ${lang}`);
   }
+  
 }
