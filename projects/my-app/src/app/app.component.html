@@ -1,14 +1,14 @@
-<!-- <lib-button label="click "  type='submit' buttonStyle="Accueil"></lib-button>
-<lib-button label="login" type= 'submit' buttonStyle="login"> </lib-button>
-<lib-button label="Add" type='button' buttonStyle="add"></lib-button>
-<lib-button label="cancel" type='button' buttonStyle="danger"></lib-button>
-<lib-button label="back" type="button" buttonStyle="secondary"></lib-button>
-<lib-button label="save" type="submit" buttonStyle="primary"></lib-button>
-<lib-button label="next" type="button" buttonStyle="next"></lib-button>
-<lib-button label="PDF" type="submit" buttonStyle="pdf"></lib-button>
-<lib-button label="Excel" type="submit" buttonStyle="excel"></lib-button>
-<lib-button label="CSV" type="submit" buttonStyle="csv"></lib-button>
-<lib-button label="payer" type="submit" buttonStyle="payment"></lib-button> -->
+<lib-button label="click "  type='submit' buttonStyle="Accueil" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="login" type= 'submit' buttonStyle="login" [customStyle]="{'margin-left': '20%'}"> </lib-button>
+<lib-button label="Add" type='button' buttonStyle="add" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="cancel" type='button' buttonStyle="danger" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="back" type="button" buttonStyle="secondary" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="save" type="submit" buttonStyle="primary" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="next" type="button" buttonStyle="next" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="PDF" type="submit" buttonStyle="pdf" [customStyle]="{'margin-left': '20%', 'padding': '15px 20px'}"></lib-button>
+<lib-button label="Excel" type="submit" buttonStyle="excel" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="CSV" type="submit" buttonStyle="csv" [customStyle]="{'margin-left': '20%'}"></lib-button>
+<lib-button label="payer" type="submit" buttonStyle="payment" [customStyle]="{'margin-left': '20%'}"></lib-button>
 <!-- <lib-input inputStyle="search" placeholder="search by reference"></lib-input>
 <lib-input inputStyle="contact"></lib-input>
 <lib-input inputStyle="contact" label="prénom"label="Name"></lib-input>
@@ -23,11 +23,14 @@
 <lib-input inputStyle="mosque" placeholder="Enter your mosque name" label="Mosque"></lib-input>
 <br>
 <lib-input inputStyle="file"></lib-input> -->
-<lib-list
+<!-- <lib-list
   [logoUrl]="logoUrl"
   [logoText]="'ZAKAT By Chafaf'"
   [menuItems]="menuItems"
   [languageFlags]="languageFlags"
   (languageChange)="onLanguageChange($event)">
-</lib-list> 
+</lib-list>  -->
+
+<!-- <lib-input inputStyle="search" [customInputStyle]="{'width': '400px'}"></lib-input>
+<lib-input inputStyle="firstname" placeholder="Enter your firstname" label="First Name" [customFrameStyle]="{'width': '250px'}" [customInputStyle]="{'width': '180px'}"></lib-input> -->
 <router-outlet></router-outlet>
